@@ -17,4 +17,4 @@ docker主要理解镜像和容器的概念。镜像是别人封装好的上传�
 3. 执行docker操作，创建自己的 'management'镜像 `docker build -t management . `
 4. 通过 `docker images` 查看本机所有的镜像列表是否包括了刚刚创建的 'management' 镜像。如果没有，不可以往下执行的嗷。
 5. 通过docker启动项目， `docker run -d -p 4000:8000 management` ,将项目中启动的8000端口映射到4000
-6. 浏览器请求 `http://127.0.0.1:4000` ，页面又返回数据，项目启动ok。
+6. 浏览器请求 `http://127.0.0.1:4000` ，页面有返回数据，项目启动ok。
