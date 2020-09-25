@@ -17,4 +17,5 @@ EXPOSE 8000
 ENV NAME World
 
 # Run app.py when the container launches
-CMD ["python", "index.py"]
+#CMD ["python", "index.py"]
+CMD ["gunicorn", "-c", "gunicorn_conf.py", "index:app"]
